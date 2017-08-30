@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+<style>
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+a{
+    color:#999;
+}
+a:hover{
+    text-decoration:none;
+    color: #C40000;
+}
+div.address {
+    margin: 20px 5px;
+    text-align: left;
+}
+tr.orderItemTR td {
+    border-bottom: 1px solid #E5E5E5;
+}
+div.buyPageDiv {
+    margin: 20px auto;
+    max-width: 1013px;
+}
+table.addressTable {
+    margin: 20px 20px;
+    width: 600px;
+}
+span.wangwangGif {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../img/site/wangwang.gif);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: scroll;
+    background-position: -83px -0px;
+    position: relative;
+    top: 8px;
+    left: 2px;
+}
+th.productListTableFirstColumn {
+    text-align: left !important;
+}
+tbody.productListTableTbody td {
+    text-align: center;
+}
+img.tmallbuy {
+    width: 15px;
+}
+table.addressTable td input {
+    border: 1px solid #AFAFAF;
+    width: 200px;
+}
+div.orderItemTotalSumDiv {
+    margin: 40px;
+    height: 40px;
+}
+table.productListTable th {
+    color: #999999;
+    font-family: 宋体;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+table.addressTable td {
+    color: #333333;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 5px;
+    text-align: left;
+    height: 30px;
+}
+div.orderItemSumDiv span {
+    color: #999999;
+}
+a.marketLink:hover {
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: 宋体;
+    font-weight: normal;
+}
+td.orderItemProductInfo img {
+    height: 16px;
+}
+table.addressTable td.firstColumn {
+    width: 100px;
+}
+table.productListTable tr.rowborder td {
+    background-color: #b2d1ff;
+    border-right: 2px solid #fff;
+    height: 3px;
+}
+span.orderItemProductPrice, span.orderItemProductNumber {
+    color: #000000;
+}
+a.marketLink {
+    color: black;
+    font-size: 12px;
+    font-family: 宋体;
+    font-weight: normal;
+}
+button.submitOrderButton {
+    border: 1px solid #C40000;
+    background-color: #C40000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    float: right;
+}
+label.orderItemDeliveryLabel {
+    color: #666666;
+    font-family: 宋体;
+    font-size: 12px;
+    font-weight: normal;
+}
+tr.orderItemTR td {
+    padding: 10px 0px;
+}
+td.orderItemProductInfo {
+    text-align: left;
+}
+table.productListTable {
+    width: 100%;
+    border-collapse: separate;
+}
+table.addressTable td textarea {
+    border: 1px solid #AFAFAF;
+    margin-bottom: 10px;
+    width: 400px;
+}
+span.leaveMessageTextareaSpan {
+    display: inilne-block;
+}
+a.orderItemProductLink:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+tbody.productListTableTbody td.orderItemFirstTD {
+    text-align: left;
+}
+textarea.leaveMessageTextarea {
+    border: 1px solid #FFAD35;
+    width: 250px;
+    height: 60px;
+    resize: none;
+}
+td.orderItemFirstTD, td.orderItemLastTD {
+    border-bottom: 0px solid black !important;
+}
+div.addressTip, div.productListTip {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+div.orderItemSumDiv {
+    padding: 20px;
+    border-top: 2px solid #B4D0FF;
+    background-color: #F2F6FF;
+    height: 50px;
+}
+div.orderItemTotalSumDiv span {
+    color: #999999;
+}
+div.submitOrderDiv {
+    height: 40px;
+    margin: 20px 0px;
+}
+div.buyPageDiv button {
+    display: inline-block;
+    margin: 0px 10px;
+    width: 180px;
+    height: 40px;
+}
+span.orderItemTotalSumSpan {
+    color: #C40000 !important;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px dotted #F2F6FF;
+}
+span.orderItemUnitSum {
+    color: #CC0000;
+    font-weight: bold;
+}
+tbody.productListTableTbody td.orderItemProductInfo {
+    text-align: left;
+}
+a.orderItemProductLink {
+    color: #666666;
+    display: block;
+}
+td.orderItemProductInfoPartTD {
+    border-bottom: solid 1px #ECECEC;
+}
+select.orderItemDeliverySelect {
+    width: 100px;
+    height: 23px;
+}
+span.leaveMessageText {
+    display: inilne-block;
+    margin-right: 10px;
+    float: left;
+}
+span.redStar {
+    color: red;
+    font-size: 8px;
+}
+img.orderItemImg {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E9E9E9;
+}
+</style>
+<script>
+$(function(){
+    $("img.leaveMessageImg").click(function(){
+        $(this).hide();
+        $("span.leaveMessageTextareaSpan").show();
+        $("div.orderItemSumDiv").css("height","100px");
+    }); 
+});
+</script>
+<div class="buyPageDiv">
+    <div class="productList">
+        <div class="orderItemSumDiv">
+            <div class="pull-left">
+                <span class="leaveMessageText">给卖家留言:</span>
+                <span>
+                    <img src="http://how2j.cn/tmall/img/site/leaveMessage.png" class="leaveMessageImg">
+                </span>
+                <span class="leaveMessageTextareaSpan" style="display: none;">
+                    <textarea class="leaveMessageTextarea" name="userMessage"></textarea>
+                    <div>
+                        <span>还可以输入200个字符</span>
+                    </div>
+                </span>
+            </div>
+            <span class="pull-right">店铺合计(含运费): ￥9,152.25</span>
+        </div>
+    </div>
+</div>
+<div style="height:100px"></div>
